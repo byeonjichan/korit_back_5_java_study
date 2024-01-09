@@ -3,7 +3,7 @@ package com.study.ch09;
 public class ElectronicDeviceMain {
 
     public static void main(String[] args) {
-        ElectronicDevice[] electronicDevice = new ElectronicDevice[100];
+        ElectronicDevice[] electronicDevice = new ElectronicDevice[10];
 
 
         for (int i = 0; i < electronicDevice.length; i++) {
@@ -24,7 +24,7 @@ public class ElectronicDeviceMain {
             electronicDevice[i].showDeviceState();
         }
         for (int i =0; i < electronicDevice.length; i++) {
-            if(electronicDevice[i] instanceof Computer) {
+            if(electronicDevice[i] instanceof Computer) { //<< 다운캐스팅 후 메소드 호출을 한 코드
             Computer computer = (Computer) electronicDevice[i];
             computer.playGame();
             }  else if (electronicDevice[i] instanceof SmartPhone) {
