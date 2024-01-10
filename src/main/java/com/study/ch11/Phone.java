@@ -4,7 +4,7 @@ public class Phone {
     static int autoCount = 0;
     int serialNumber;
 
-    @Override
+    @Override //함수화 시키는것.
     public String toString() {
         return "Phone{" +
                 "serialNumber=" + serialNumber +
