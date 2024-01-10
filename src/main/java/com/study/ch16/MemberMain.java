@@ -1,5 +1,7 @@
 package com.study.ch16;
 
+import com.study.ch02.PersonMain;
+
 import javax.crypto.BadPaddingException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -41,9 +43,14 @@ public class MemberMain {
 
             }else if("4".equals(selectedMenu)) {// [회원 이름으로 조회] / 조회 할 회원의 이름을 입력하세요 > 김준이/ Member 객체 toString();/ <<조회가 완료되었습니다>>
                 System.out.println("회원 이름으로 조회");
-                System.out.print(members.indexOf("이름 :" + scanner.next()));
-                for (members.get(i)= null; )
-                System.out.println(members.get());
+                System.out.printf("회원명 :");
+                for (Member member : members) {
+                    String name =scanner.nextLine();
+                    if (member.getName().equals(name)) {
+                        System.out.println("조회 할 회원의 이름: " + member.getName());
+                        break;
+                    }
+                }
                 System.out.println("<<< 조회가 완료되었습니다 >>>");
 
             }else if("5".equals(selectedMenu)) {// [회원 전체 조회하기] / MemberList 전체 반복 toString();/ <<조회가 완료되었습니다.>>
