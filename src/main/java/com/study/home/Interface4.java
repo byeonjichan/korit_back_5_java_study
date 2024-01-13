@@ -9,10 +9,10 @@ public class Interface4 {
         Clock phone5 = new MycallPhone();
         PhoneUser user1 = new PhoneUser();
         user1.call(phone1);
-      //  user1.call(phone2);
+    //    user1.call(phone2);
         user1.call(phone3);
-       // user1.call(phone4);
-      //  user1.call(phone5);
+    //    user1.call(phone4);
+    //    user1.call(phone5);
     }
 }
 interface Camera{
